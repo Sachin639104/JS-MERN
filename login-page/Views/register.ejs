@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body><center>
+      <h1 style="color: rgb(42, 199, 147);">Register Page</h1>
+      <% if(success){ %>
+          <p style="color: green;"><%= success %></p>
+          <% } %>
+        <% if(error){ %>
+         <p style="color: red;"> <%= error %> </p>
+          <% } %>
+    
+           <form action="/register"  method="post">
+      
+        <input type="text" name="name" id="name" placeholder="enter the name" /><br><br>
+        <input type="email" name="email" id="eamil" placeholder="enter the email" /><br><br>
+        <input type="password" name="password" id="password" placeholder="enter the password" /><br><br>
+        <input type="password" name="cpassword" id="cpassword" placeholder="enter the confirm password" /><br><br>
+        <input type="text" name="phone" id="phone" placeholder="enter the phone number" />
+           </br><br>
+             <input type="submit" value="Register" id="btn">
+             <div>
+                <p>User Login! <a href="/login-page/" >Login</a> </p>
+             </div>
+        
+        </form>
+    </center>
+</body>
+</html>

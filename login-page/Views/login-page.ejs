@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body><center>
+    <h1>Login Page</h1><br>
+    <% if(error){ %>
+        <p style="color: red;"> <%= error %> </p>
+        <% } %>
+     <form action="/login-page" method="post" id="login">
+       <p style="color: rgb(79, 99, 99); text-align: left;">EMAIL:</p> <input type="email" name="email" id="email" ><br><BR>
+       <p style="color: rgb(89, 110, 110); text-align: left;"> PASSWORD: </p><input type="password" name="password" id="email" ><br><br>
+         <button type="submit">Login</button>
+         <div>
+                <p>Back TO register! <a href="/" >Register</a> </p>
+             </div>
+        
+     </form> 
+     </center> 
+</body>
+</html>

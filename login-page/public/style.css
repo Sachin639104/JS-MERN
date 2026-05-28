@@ -1,0 +1,35 @@
+form{
+    border: 2px solid black;
+    height:350px;
+    width: 300px;
+    padding: 20px;
+    background-color: bisque;
+}
+#btn{
+    box-shadow: 2px 5px 25px black;
+    height: 30px;
+    color: blue;
+    width: 80px;
+}
+input{
+    height: 30px;
+    width:300px;
+    text-align: center;
+    font-size: 15px;
+}
+#login{
+    border: 2ps solid black;
+    height: 280px;
+    width:250px;
+}
+#email{
+    height:20px;
+    width: 250px;
+}
+button{
+    
+    box-shadow: 2px 5px 25px black;
+    height: 30px;
+    color: blue;
+    width: 80px;
+}
