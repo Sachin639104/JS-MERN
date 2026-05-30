@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body><center>
+    <h1 style="color: rgb(179, 127, 127);">student dashboard!!</h1>
+    <% if(msg){ %>
+        <p style="color: green; font-size: 20px;">
+            <%=msg%>
+        </p>
+        <% } %>
+    <table border="1" cellpadding="0" cellspacing="0"  align="center">
+        <thead>
+            <tr align="right">
+                <th colspan="5" >
+                    <a href="/add-student/">Add Student</a>
+                </th>
+            </tr>
+            <tr>    
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>course</th>
+            <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% studentDetails.forEach(stu=>{ %>
+              <tr>
+                <td><%=stu.name%></td>
+                <td><%=stu.email%></td>
+                <td><%=stu.phone%></td>
+                <td><%=stu.course%></td>
+                <td>
+                    <a href="/show-details/<%=stu._id%>">Show</a>||
+                    <a href="/edit-student/<%=stu._id%>">Edit</a>||
+                    <a href="/delete-student/<%=stu._id%>"
+                     onclick="javascript:return confirm('are you sure delete?')">Delete</a>
+                </td>
+              </tr>
+           <% }) %>
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>

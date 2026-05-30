@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-Student</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <center>
+        <h1 style="color: rgb(153, 153, 142);">Edit-student</h1>
+        <form action="/edit-student/<%=stu._id%>" method="post">
+            <div class="edit">
+            <input type="text" name="name" id="name"  value="<%=stu.name%>"
+             placeholder="enter name"><br>
+            <input type="email" name="email" id="email" value="<%=stu.email%>" 
+            placeholder="enter email"><br>
+            <input type="text" name="phone" id="phone" value="<%=stu.phone%>" 
+            placeholder="enter phone"><br>
+            <input type="text" name="course" id="course" value="<%=stu.course%>" 
+            placeholder="enter course"><br>
+              <input type="submit" value="Submit" id="btn">
+              <input type="reset" value="Cancel" id="btn">
+            </div>
+        </form>
+    </center>
+    
+</body>
+</html>
