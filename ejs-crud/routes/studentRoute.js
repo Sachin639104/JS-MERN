@@ -19,4 +19,8 @@ routes.post('/add-student/',add_students);
 
 routes.post('/edit-student/:id',edit_student);
 
+routes.use((req,res)=>{
+ res.render('404',{message:'requested page unavaible !'})
+})
+
 module.exports=routes;
